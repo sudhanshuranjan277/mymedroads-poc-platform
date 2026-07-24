@@ -10,13 +10,14 @@ app = FastAPI(
 )
 
 
-
+# CORS Configuration
 app.add_middleware(
 
     CORSMiddleware,
 
     allow_origins=[
         "http://localhost:5173",
+        "http://127.0.0.1:5173"
     ],
 
     allow_credentials=True,
@@ -28,6 +29,8 @@ app.add_middleware(
 )
 
 
+
+# API Routers
 
 app.include_router(
     hospital_router
@@ -44,8 +47,8 @@ app.include_router(
 def health():
 
     return {
-        "status":"healthy",
-        "service":"MyMedRoads API"
+        "status": "healthy",
+        "service": "MyMedRoads API"
     }
 
 
@@ -54,7 +57,7 @@ def health():
 def root():
 
     return {
-        "message":"Welcome to MyMedRoads API",
-        "docs":"/docs",
-        "health":"/health"
+        "message": "Welcome to MyMedRoads API",
+        "docs": "/docs",
+        "health": "/health"
     }
