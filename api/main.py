@@ -25,3 +25,13 @@ def health():
         "status": "healthy",
         "service": "MyMedRoads API"
     }
+
+
+@app.get("/")
+def root():
+
+    return {
+        "message": "Welcome to MyMedRoads API",
+        "docs": "/docs",
+        "health": "/health"
+    }
