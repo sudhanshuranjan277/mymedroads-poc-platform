@@ -1,0 +1,17 @@
+# Python cache
+__pycache__/
+*.pyc
+
+
+# Scraper generated data
+database/raw/*.json
+database/processed/*.json
+
+
+# Export files
+output/*.csv
+output/*.sql
+
+
+# Logs
+logs/*.log

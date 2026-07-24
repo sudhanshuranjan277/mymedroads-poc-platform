@@ -1,0 +1,10 @@
+[
+    {
+        "hospital_id": 1,
+        "name": "Artemis Hospitals",
+        "adapter": "artemis",
+        "base_url": "https://www.artemishospitals.com",
+        "location": "Gurgaon, Haryana",
+        "enabled": true
+    }
+]

@@ -1,0 +1,21 @@
+{
+    "files.watcherExclude": {
+        "**/.git/**": true,
+        "**/__pycache__/**": true,
+        "**/database/raw/**": true,
+        "**/database/processed/**": true,
+        "**/output/**": true
+    },
+
+    "files.exclude": {
+        "**/__pycache__": true,
+        "**/*.pyc": true
+    },
+
+    "search.exclude": {
+        "**/database/**": true,
+        "**/output/**": true
+    },
+
+    "git.autorefresh": false
+}
