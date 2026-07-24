@@ -27,6 +27,15 @@ def health():
     }
 
 
+@app.get("/debug")
+def debug():
+
+    return {
+        "file": "api/main.py",
+        "status": "latest-code"
+    }
+
+
 @app.get("/")
 def root():
 
